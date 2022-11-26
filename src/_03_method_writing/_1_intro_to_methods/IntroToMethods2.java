@@ -1,21 +1,21 @@
 package _03_method_writing._1_intro_to_methods;
 
-public class IntroToMethods {
+public class IntroToMethods2 {
 	/*
 	 * 3 parts to a method
 	 * 
-	 * 1) Method Name 
+	 * 1) Method Name
 	 * 		Used to call the method
 	 * 		Always directly to the left of ()
 	 * 2) Return type
 	 * 		The type of value returned by the method (ex: int, String, boolean)
-	 * 		"void" is are 0, ,xc0. turn type that returns nothing (like the move() for a Robot)
+	 * 		"void" is a return type that returns nothing (like the move() for a Robot)
 	 * 		Always directly to the left of the method name 
 	 * 3) Parameters
 	 * 		The values/variables passed into a method to be used
 	 * 		Always inside the ()
 	 * 
-	 * Extra Note: "public"  is optional and use "static" if calling the method from main
+	 * Extra Note: "public" is optional and use "static" if calling the method from main
 	 * 
 	 * 
 	 * Instructions
@@ -26,8 +26,7 @@ public class IntroToMethods {
 	 */
 	public static void main(String[] args) {
 		// Method1
-		String output1 = method1();
-		System.out.println(output1);
+		method1();
 
 		// Method2
 		String output2 = method2();
@@ -44,8 +43,8 @@ public class IntroToMethods {
 		method5("Method", 5);
 	}
 	
-	public static String method1() {
-		return"Method1";
+	public static void method1() {
+		System.out.println("Method1");
 	}
 
 	public static String method2() {
@@ -53,7 +52,7 @@ public class IntroToMethods {
 	}
 
 	public static void method3(String message) {
-		System.out.println(message);
+		System.out.println("Method3");
 	}
 
 	public static String method4(String message) {
