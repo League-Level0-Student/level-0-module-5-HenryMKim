@@ -19,13 +19,26 @@ String pet = JOptionPane.showInputDialog(null, "Which pet do you want to buy? ")
 					new String[] { "Culddle with your " + pet + ".", "Walk your " + pet + ".", "Feed your " + pet + ".", "Clean up your " + pet + "'s poop."}, null);
 
 			// 6. Use user input to call the appropriate method created in step 5 below.
-if(task = 1) {
+if(task == 1) {
+	happinessLevel = happinessLevel + 1;
+}
+if(task == 2) {
+	happinessLevel = happinessLevel + 1;
+}
+if(task == 3) {
+	happinessLevel = happinessLevel + 1;
+}
+if(task == 4) {
 	happinessLevel = happinessLevel + 1;
 }
 	// 7. If you determine the happiness level is large enough, tell the
 		
 			//    user that he loves his pet and use break; to exit for loop.
+		if(happinessLevel == 5) {
+			JOptionPane.showMessageDialog(null, "You love your pet!");
 		}
+		}
+		
 	}
 
 	// 5. Create methods to handle each of your user selections.
